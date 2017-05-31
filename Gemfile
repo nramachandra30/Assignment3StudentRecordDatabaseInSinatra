@@ -14,6 +14,8 @@ gem "dm-migrations"
 
 gem "thin"
 
+gem "data_mapper"
+
 gem "pg" , :group => :production
 
 gem "dm-sqlite-adapter", :group => :development
