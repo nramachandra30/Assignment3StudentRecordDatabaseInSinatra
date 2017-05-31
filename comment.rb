@@ -1,5 +1,4 @@
-require 'dm-core'
-require 'dm-migrations'
+require 'data_mapper'
 
 class CommentData
   include DataMapper::Resource
