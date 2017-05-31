@@ -1,0 +1,6 @@
+<h1>Edit Student Information</h1>
+<form action="/students/<%= ::Temple::Utils.escape_html((@student.id)) %>" method="POST">
+<input name="_method" type="hidden" value="PUT" />
+<%= erb :student_form %>
+</form>
+

@@ -1,0 +1,16 @@
+<!-- LOGIN PAGE -->
+<form action="/login" method="POST">
+<% if session[:fail]
+ %><p style="color:red;">Invalid Login Credentials</p>
+<% session[:fail] = false
+end %><br />
+<label for="username" font-size: 16pt>Username:</label>
+<input id="username" name="username" type="text" />
+<br />
+<br />
+<label for="password">Password:</label>
+<input id="password" name="password" type="password" />
+<br />
+<br />
+<input type="submit" value="Log In" />
+</form>

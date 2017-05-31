@@ -1,0 +1,9 @@
+<h1>Comments</h1>
+<a href="/comments/new">Create a new comment</a>
+<% if @comments.any?
+ %><ul id="comments">
+<% @comments.each do |comment|
+ %><li><a href="/comments/<%= ::Temple::Utils.escape_html((comment.id)) %>"><%= ::Temple::Utils.escape_html((comment.comment)) %> - <%= ::Temple::Utils.escape_html((comment.created_at)) %> </a></li>
+<% end %></ul><% else
+ %><p>No records have been created yet!</p>
+<% end %>

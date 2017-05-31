@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><%= @title || "Student Information System" %>
+</title><meta charset="utf-8" />
+<link href="/styles.css" rel="stylesheet" />
+</head><body>
+<header>
+<h1>Student <br/>Information <br/>System</h1>
+<% if session[:fail]
+<%= erb :navlogin %>
+%>
+</header><section>
+<%= yield %>
+</section></body></html>

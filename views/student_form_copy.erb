@@ -1,0 +1,9 @@
+<label for="sfname">First Name:</label>
+<input id="sfname" name="student[sfname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.sfname)) %>" />
+<label for="slname">Last Name:</label>
+<input id="slname" name="student[slname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.slname)) %>" />
+<label for="major">Major:</label>
+<input id="major" name="student[major]" type="text" value="<%= ::Temple::Utils.escape_html((@student.major)) %>" />
+<label for="gpa">Students GPA:</label>
+<input id="gpa" name="student[gpa]" step="any" type="number" value="<%= ::Temple::Utils.escape_html((@student.gpa)) %>" />
+<input type="submit" value="Save Student" />
