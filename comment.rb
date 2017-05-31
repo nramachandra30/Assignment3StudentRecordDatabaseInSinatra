@@ -5,10 +5,7 @@ class CommentData
   include DataMapper::Resource
   property :id, Serial
   property :name, String
-  property :comment,   String,  :required => true,
-  :messages => {
-      :presence  => "We need your valuable comment"
-  }
+  property :comment,   String,  :required => true
   property :created_at, DateTime
 end
 
