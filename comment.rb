@@ -27,7 +27,7 @@ end
 
 
 get '/comments/new' do
-  halt(401,'Not Authorized') unless session[:admin]
+  halt(401,'Not Authorized to create comments before logging in') unless session[:admin]
   @comment = CommentData.new
   @comment.created_at = Time.now
   erb :new_comment
