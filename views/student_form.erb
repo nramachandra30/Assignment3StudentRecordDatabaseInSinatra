@@ -1,5 +1,5 @@
 <label for="sfname">First Name :</label>
-<input id="sfname" name="student[sfname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.sfname)) %>" />
+<input id="sfname" name="student[sfname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.sfname)) %>" required/>
 <label for="slname">Last Name :</label>
 <input id="slname" name="student[slname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.slname)) %>" />
 <label for="major">Major :</label>
