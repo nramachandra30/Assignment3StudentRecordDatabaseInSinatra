@@ -12,8 +12,6 @@ gem "dm-core"
 
 gem "dm-migrations"
 
-gem "dm-validations"
-
 gem "thin"
 
 gem "pg" , :group => :production
