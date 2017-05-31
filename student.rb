@@ -1,6 +1,5 @@
 require 'dm-core'
 require 'dm-migrations'
-require 'dm-validations'
 
 class StudentData
   include DataMapper::Resource
