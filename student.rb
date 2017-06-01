@@ -6,7 +6,7 @@ class StudentData
   property :sfname, String
   property :slname, String
   property :major, String
-  property :gpa, Float,default => 0
+  property :gpa, Float, :default => 0
   property :birthday, Date
   property :address, String
   property :studentid, String
