@@ -6,8 +6,8 @@
 <h3><p>Birthday : <%= ::Temple::Utils.escape_html((@student.birthday)) %></p></h3>
 <h3><p>Address : <%= ::Temple::Utils.escape_html((@student.address)) %></p></h3>
 <h3><p>Student ID : <%= ::Temple::Utils.escape_html((@student.studentid)) %></p></h3>
-<h2><p><a href="/students">Back to Student Records</a></p></h2>
-<h2><p><a href="/students/<%= ::Temple::Utils.escape_html((@student.id)) %>/edit">Edit Student Record</a></p></h2>
+<p><a href="/students"><h2>Back to Student Records</h2></a></p>
+<p><a href="/students/<%= ::Temple::Utils.escape_html((@student.id)) %>/edit"><h2>Edit Student Record</h2></a></p>
 <form action="/students/<%= ::Temple::Utils.escape_html((@student.id)) %>" method="POST">
 <input name="_method" type="hidden" value="DELETE" />
 <h2><input type="submit" value="Delete this Student Record" /></h2>
