@@ -4,7 +4,7 @@ class StudentData
   include DataMapper::Resource
   property :id, Serial
   property :sfname, String
-  property :slname, String,
+  property :slname, String
   property :major, String
   property :gpa, Float,default => 0
   property :birthday, Date
