@@ -1,5 +1,5 @@
 <h3><%= ::Temple::Utils.escape_html((@comment.id)) %></h3>
-<% if @comment.name = "" %>
+<% if @comment.name == "" %>
 <h3><p>Name: Anonymous </p></h3>
 <% else %>
 <h3><p>Name: <%= ::Temple::Utils.escape_html((@comment.name)) %></p></h3>
