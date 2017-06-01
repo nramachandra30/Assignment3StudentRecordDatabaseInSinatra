@@ -1,15 +1,15 @@
 <label for="sfname">First Name :</label>
 <input id="sfname" name="student[sfname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.sfname)) %>" required/>
 <label for="slname">Last Name :</label>
-<input id="slname" name="student[slname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.slname)) %>" />
+<input id="slname" name="student[slname]" type="text" value="<%= ::Temple::Utils.escape_html((@student.slname)) %>" required/>
 <label for="major">Major :</label>
-<input id="major" name="student[major]" type="text" value="<%= ::Temple::Utils.escape_html((@student.major)) %>" />
+<input id="major" name="student[major]" type="text" value="<%= ::Temple::Utils.escape_html((@student.major)) %>" required/>
 <label for="gpa">GPA :</label>
 <input id="gpa" name="student[gpa]" step="any" type="number" value="<%= ::Temple::Utils.escape_html((@student.gpa)) %>" />
 <label for="gpa">Birthday :</label>
-<input id="birthday" name="student[birthday]" step="any" type="Date" value="<%= ::Temple::Utils.escape_html((@student.birthday)) %>" />
+<input id="birthday" name="student[birthday]" step="any" type="Date" value="<%= ::Temple::Utils.escape_html((@student.birthday)) %>" required/>
 <label for="gpa">Address :</label>
 <input id="address" name="student[address]" step="any" type="text" value="<%= ::Temple::Utils.escape_html((@student.address)) %>" />
 <label for="studentid">Student ID :</label>
-<input id="studentid" name="student[studentid]" step="any" type="text" value="<%= ::Temple::Utils.escape_html((@student.studentid)) %>" />
+<input id="studentid" name="student[studentid]" step="any" type="text" value="<%= ::Temple::Utils.escape_html((@student.studentid)) %>" required/>
 <input type="submit" value="Save Student" />
