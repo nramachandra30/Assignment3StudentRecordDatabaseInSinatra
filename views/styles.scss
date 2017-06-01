@@ -73,6 +73,16 @@ header h4 {
   line-height: 60px;
 }
 
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
 @mixin tabs ($background: blue, $color: yellow) {
   ul {
     list-style: none;
