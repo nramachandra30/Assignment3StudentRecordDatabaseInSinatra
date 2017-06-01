@@ -4,7 +4,7 @@ class CommentData
   include DataMapper::Resource
   property :id, Serial
   property :name, String
-  property :comment,   String,  :required => true
+  property :comment,   String,  :required => true,:length => 500
   property :created_at, DateTime
 end
 
