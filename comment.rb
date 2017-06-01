@@ -1,5 +1,6 @@
 require 'data_mapper'
 
+#MaxLength of the comment is 500
 class CommentData
   include DataMapper::Resource
   property :id, Serial
@@ -21,7 +22,7 @@ get '/comments' do
   erb :comments
 end
 
-
+#create a new comment
 get '/comments/new' do
   if session[:admin]
     @comment = CommentData.new
@@ -32,6 +33,7 @@ get '/comments/new' do
   end
 end
 
+#show each comment with its id
 get '/comments/:id' do
   if session[:admin]
     @comment = CommentData.get(params[:id])
