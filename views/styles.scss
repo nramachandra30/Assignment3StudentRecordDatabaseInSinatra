@@ -80,6 +80,7 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+    font-size: 10px;
 }
 
 @mixin tabs ($background: blue, $color: yellow) {
