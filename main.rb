@@ -21,6 +21,7 @@ end
 
 get('/styles.css'){ scss :styles }
 
+#Set up the session to frank as admin
 get '/' do
   if session[:admin]
     erb :home
