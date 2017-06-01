@@ -1,6 +1,10 @@
 <h3><%= ::Temple::Utils.escape_html((@student.id)) %> </h3>
 <h3><p>First Name : <%= ::Temple::Utils.escape_html((@student.sfname)) %></p></h3>
+<% if @comment.name == "" %>
 <h3><p>Last Name : <%= ::Temple::Utils.escape_html((@student.slname)) %></p></h3>
+<% else %>
+<h3><p>Last Name : Unknown </p></h3>
+<% end %>
 <h3><p>Major :  <%= ::Temple::Utils.escape_html((@student.major)) %></p></h3>
 <h3><p>GPA : <%= ::Temple::Utils.escape_html((@student.gpa)) %></p></h3>
 <h3><p>Birthday : <%= ::Temple::Utils.escape_html((@student.birthday)) %></p></h3>
