@@ -10,5 +10,5 @@
 <p><a href="/students/<%= ::Temple::Utils.escape_html((@student.id)) %>/edit"><h4>Edit Student Record</h4></a></p>
 <form action="/students/<%= ::Temple::Utils.escape_html((@student.id)) %>" method="POST">
 <input name="_method" type="hidden" value="DELETE" />
-<h2><input type="submit" value="Delete this Student Record" /></h2>
+<input type="submit" value="Delete this Student Record" />
 </form>
