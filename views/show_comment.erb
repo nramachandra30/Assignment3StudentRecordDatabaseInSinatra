@@ -3,6 +3,7 @@
 <h3><p>Name: <%= ::Temple::Utils.escape_html((@comment.name)) %></p></h3>
 <% end %> <% else %>
 <h3><p>Name: <%= Anonymous %></p></h3>
+<% end %> 
 <h3><p>Comment: <%= ::Temple::Utils.escape_html((@comment.comment)) %></p></h3>
 <h3><p>Created at: <%= ::Temple::Utils.escape_html((@comment.created_at)) %></p></h3>
 <p><a href="/comments"><h4>Back to Comments section</h4></a></p>
